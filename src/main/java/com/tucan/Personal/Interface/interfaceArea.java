@@ -1,6 +1,7 @@
 package com.tucan.Personal.Interface;
 
 import com.tucan.Personal.Model.Area;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;

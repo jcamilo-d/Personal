@@ -4,9 +4,11 @@ import com.tucan.Personal.Interface.interfaceArea;
 import com.tucan.Personal.Model.Area;
 import com.tucan.Personal.Repository.repArea;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+@Service
 
 public class serviceArea implements interfaceArea {
     @Autowired
