@@ -4,10 +4,11 @@ import com.tucan.Personal.Interface.interfaceArl;
 import com.tucan.Personal.Model.Arl;
 import com.tucan.Personal.Repository.repArl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class serviceArl implements interfaceArl {
     @Autowired
     private repArl repositorio;

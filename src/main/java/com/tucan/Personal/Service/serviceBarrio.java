@@ -4,10 +4,11 @@ import com.tucan.Personal.Interface.interfaceBarrio;
 import com.tucan.Personal.Model.Barrio;
 import com.tucan.Personal.Repository.repBarrio;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class serviceBarrio implements interfaceBarrio {
     @Autowired
     private repBarrio repositorio;

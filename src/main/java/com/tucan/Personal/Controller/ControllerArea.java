@@ -15,15 +15,15 @@ public class ControllerArea {
     private interfaceArea service;
 @GetMapping("/areas")
     public String listarAreas(Model model){
-        model.addAttribute("titulo","verAreas");
+        model.addAttribute("titulo","ver Areas");
         model.addAttribute("cuerpo","AREAS");
         model.addAttribute("listaAreas",service.listaAreas());
         return"/areas";
     }
-@GetMapping("areas/nuevo")
+@GetMapping("/areas/nuevo")
     public String formularioArea(Model model){
-    model.addAttribute("titulo","Ingresar NuevoFormato");
-    model.addAttribute("cuerpo","Registro de Formatos");
+    model.addAttribute("titulo","Ingresar NuevaArea");
+    model.addAttribute("cuerpo","Registro de Areas");
     model.addAttribute("area",new Area());
     return "/areasNuevo";
     }

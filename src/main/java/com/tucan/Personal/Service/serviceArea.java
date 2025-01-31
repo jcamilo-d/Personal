@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 @Service
-
 public class serviceArea implements interfaceArea {
     @Autowired
     private repArea repositorio;

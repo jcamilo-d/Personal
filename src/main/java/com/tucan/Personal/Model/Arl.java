@@ -13,8 +13,6 @@ public class Arl {
     private int id;
     @Column(length = 100, nullable = false)
     private String nombre;
-    @Column(length = 10)
+    @Column(length = 15)
     private String contacto;
-
-
 }

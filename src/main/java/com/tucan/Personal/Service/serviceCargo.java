@@ -4,10 +4,11 @@ import com.tucan.Personal.Interface.interfaceCargo;
 import com.tucan.Personal.Model.Cargo;
 import com.tucan.Personal.Repository.repCargo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class serviceCargo implements interfaceCargo {
     @Autowired
     private repCargo repositorio;
