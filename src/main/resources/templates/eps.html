@@ -25,8 +25,8 @@
             <td th:text = "${tmpList.nombre}" ></td>
             <td th:text = "${tmpList.contacto}" ></td>
             <td>
-                <a class="btn btn-warning" th:href="@{/areas/editar/} + ${tmpList.id}">EDITAR</a>
-                <a class="btn btn-danger" th:href="@{/areas/eliminar/} + ${tmpList.id}" onclick="return confirm('Se Eliminaran los registros asociados con este Eps. '+ '\n' + '¿Seguro que desea eliminar este Eps?')" >ELIMINAR</a>
+                <a class="btn btn-warning" th:href="@{/Eps/editar/} + ${tmpList.id}">EDITAR</a>
+                <a class="btn btn-danger" th:href="@{/Eps/eliminar/} + ${tmpList.id}" onclick="return confirm('Se Eliminaran los registros asociados con este Eps. '+ '\n' + '¿Seguro que desea eliminar este Eps?')" >ELIMINAR</a>
             </td>
         </tr>
         </tbody>

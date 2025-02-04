@@ -33,7 +33,7 @@ public class ControllerEps {
 @PostMapping("/Eps/guardar")
     public String guardarEps(@ModelAttribute Eps eps){
     service.guardar(eps);
-    return "redirect:/eps";
+    return "redirect:/Eps";
 }
 
 @GetMapping("/Eps/editar/{id}")
@@ -44,7 +44,7 @@ public class ControllerEps {
 @GetMapping("/Eps/eliminar/{id}")
     public String eliminarEps(@PathVariable("id")int id){
     service.eliminar(id);
-    return "/redirect/eps";
+    return "redirect:/Eps";
 }
 
 }
