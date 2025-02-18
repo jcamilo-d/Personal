@@ -4,10 +4,11 @@ import com.tucan.Personal.Interface.interfaceEps;
 import com.tucan.Personal.Model.Eps;
 import com.tucan.Personal.Repository.repEps;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class serviceEps implements interfaceEps {
     @Autowired
     private repEps repositorio;

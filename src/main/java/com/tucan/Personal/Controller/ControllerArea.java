@@ -15,7 +15,7 @@ public class ControllerArea {
     private interfaceArea service;
 @GetMapping("/areas")
     public String listarAreas(Model model){
-        model.addAttribute("titulo","ver Areas");
+        model.addAttribute("titulo","verAreas");
         model.addAttribute("cuerpo","AREAS");
         model.addAttribute("listaAreas",service.listaAreas());
         return"/areas";
@@ -33,7 +33,7 @@ public class ControllerArea {
     return "redirect:/areas";
     }
 @GetMapping("/areas/editar/{id}")
-    public String editarAreas(@PathVariable("id") int id, Model model){
+    public String editarArea(@PathVariable("id") int id, Model model){
     model.addAttribute("area",service.editar(id));
     return"/areasNuevo";
     }

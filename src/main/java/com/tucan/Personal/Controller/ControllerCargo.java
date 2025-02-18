@@ -45,6 +45,8 @@ public class ControllerCargo {
 @GetMapping("/cargos/editar/{id}")
     public String editarCargo(@PathVariable("id") int id, Model model){
     model.addAttribute("cargo", service.editar(id));
+    model.addAttribute("clasificacion", Clasificacion.values());
+    model.addAttribute("listaAreas",area.listaAreas());
     return "/cargosNuevo";
 }
 

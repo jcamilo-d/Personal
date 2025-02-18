@@ -25,9 +25,9 @@
     <tr>
       <td th:text = "${tmpList.id}" ></td>
       <td th:text = "${tmpList.nombre}" ></td>
-      <td th:text = "${tmpList.clasificacion"></td>
-      <td th:text = "${tmpList.area.nombre"></td>
-      <td th:text = "${tmpList.descripcion" ></td>
+      <td th:text="${tmpList.clasificacion}"></td>
+      <td th:text = "${tmpList.area.nombre}"></td>
+      <td th:text = "${tmpList.descripcion}"></td>
 
       <td>
         <a class="btn btn-warning" th:href="@{/cargos/editar/} + ${tmpList.id}">EDITAR</a>
