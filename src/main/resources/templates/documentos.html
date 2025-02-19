@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title th:text="${titulo}"></title>
@@ -15,23 +15,18 @@
       <tr class = "table table-dark" style="color:#FFFFFF;">
         <th>CODIGO</th>
         <th>NOMBRE</th>
-        <th>CLASIFICACION</th>
-        <th>AREA</th>
-        <th>DESCRIPCION</th>
+        <th>CODIGO</th>
         <th>SERVICIOS</th>
       </tr>
       </thead>
-      <tbody th:each = "tmpList: ${listaCargos}">
+      <tbody th:each = "tmpList: ${listaDocumentos}">
       <tr>
         <td th:text = "${tmpList.id}" ></td>
         <td th:text = "${tmpList.nombre}" ></td>
-        <td th:text="${tmpList.clasificacion}"></td>
-        <td th:text = "${tmpList.area.nombre}"></td>
-        <td th:text = "${tmpList.descripcion}"></td>
-
+        <td th:text = "${tmpList.codigo}" ></td>
         <td>
-          <a class="btn btn-warning" th:href="@{/cargos/editar/} + ${tmpList.id}">EDITAR</a>
-          <a class="btn btn-danger" th:href="@{/cargos/eliminar/} + ${tmpList.id}" onclick="return confirm('Se Eliminaran los registros asociados con este Cargo. '+ '\n' + '¿Seguro que desea eliminar este Cargo?')" >ELIMINAR</a>
+          <a class="btn btn-warning" th:href="@{/documentos/editar/} + ${tmpList.id}">EDITAR</a>
+          <a class="btn btn-danger" th:href="@{/documentos/eliminar/} + ${tmpList.id}" onclick="return confirm('Se Eliminaran los registros asociados con este tipo de Documento . '+ '\n' + '¿Seguro que desea eliminar este tipo de Documento?')" >ELIMINAR</a>
         </td>
       </tr>
       </tbody>

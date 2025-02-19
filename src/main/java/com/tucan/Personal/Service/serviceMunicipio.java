@@ -4,10 +4,11 @@ import com.tucan.Personal.Interface.interfaceMunicipio;
 import com.tucan.Personal.Model.Municipio;
 import com.tucan.Personal.Repository.repMunicipio;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class serviceMunicipio implements interfaceMunicipio {
     @Autowired
     private repMunicipio repositorio;
